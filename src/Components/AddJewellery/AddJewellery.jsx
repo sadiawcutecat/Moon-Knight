@@ -1,5 +1,52 @@
+// import { useContext } from "react";
+// import { AuthContext } from "../../Provider/AuthProvider";
 
 const AddJeweller = () => {
+    // const { user } = useContext(AuthContext);
+
+    const handleAddJeweller = event => {
+
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const photo = form.photo.value;
+        const seller_name = form.seller_name.value;
+        const sub_category = form.sub_category.value;
+        const price = form.price.value;
+        const rating = form.rating.value;
+        const quantity = form.quantity.value
+        const email = form.seller_email.value
+
+
+        const jewellers = {
+            toys_name: name,
+            photo,
+            seller_name,
+            email,
+            sub_category,
+            price,
+            rating,
+            quantity
+        }
+
+        console.log(jewellers);
+
+        fetch(`http://localhost:5000/api/jewellers`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(jewellers)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+              
+            })
+
+    }
+
+
     return (
         <div>
              <div className="hero  bg-base-200">
@@ -8,7 +55,7 @@ const AddJeweller = () => {
                     <div className="card flex-shrink-0 w-full  shadow-2xl bg-base-100">
                         <div className="card-body">
                             <h1 className="text-3xl text-center text-amber-300 font-bold">Add Jewellery</h1>
-                            <form >
+                            <form onSubmit={handleAddJeweller}>
                                 <div className='flex gap-6 font-bold '>
                                     <div className="form-control w-1/2">
                                         <label className="label">
@@ -34,7 +81,7 @@ const AddJeweller = () => {
                                         <label className="label">
                                             <span className="label-text">Seller Email</span>
                                         </label>
-                                        <input type="email" name='seller_email'  placeholder="seller email" className="input input-bordered " disabled />
+                                        <input type="email" name='seller_email'  placeholder="seller email" className="input input-bordered "  />
                                     </div>
                                 </div>
                                 <div className='flex gap-6 font-bold'>
