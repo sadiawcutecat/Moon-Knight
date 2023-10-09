@@ -13,6 +13,8 @@ import SignUp from './Components/Home/SignUp/SignUp';
 import AuthProvider from './Provider/AuthProvider';
 import AddJeweller from './Components/AddJewellery/AddJewellery';
 import AllJewellery from './Components/AllJewellery/AllJewellery';
+import MyJewellery from './Components/MyJewellery/MyJewellery';
+import Blogs from './Components/Blogs/Blogs';
 
 
 const router = createBrowserRouter([
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
       {
         path: '/AllJewellers',
         element: <AllJewellery></AllJewellery>
+      },
+      {
+        path: '/myJewellers',
+        element: <MyJewellery></MyJewellery>
+      },
+      {
+        path: '/blogs',
+        element:<Blogs></Blogs>
       },
      
 

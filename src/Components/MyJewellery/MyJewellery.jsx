@@ -84,12 +84,15 @@ const MyJewellery = () => {
                 </thead>
                 <tbody>
                     {
-                        myJewellers?.map(myJeweller => <myJewellerRow
+                        myJewellers?.map(myJeweller => <myjewellerRow
                         key={myJeweller._id}
+                        // eslint-disable-next-line react/no-unknown-property
                         myJeweller={myJeweller}
+                        // eslint-disable-next-line react/no-unknown-property
                         handleDelete={handleDelete}
+                        // eslint-disable-next-line react/no-unknown-property
                         handleupdate={handleupdate}
-                        ></myJewellerRow>
+                        ></myjewellerRow>
                         
                         
                         
