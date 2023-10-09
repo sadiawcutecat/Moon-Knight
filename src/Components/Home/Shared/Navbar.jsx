@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaUserCircle } from 'react-icons/fa';
-import logo from "../../../../public/images/logo_corano_125x.png"
+import logo from "/images/logo_corano_125x.png"
 import { AuthContext } from "../../../Provider/AuthProvider";
 import { useContext } from "react";
 
