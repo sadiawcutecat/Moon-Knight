@@ -18,8 +18,8 @@ const AddJeweller = () => {
         const email = form.seller_email.value
 
 
-        const jewellers = {
-            toys_name: name,
+        const jeweller = {
+            jewellery_name: name,
             photo,
             seller_name,
             email,
@@ -29,14 +29,14 @@ const AddJeweller = () => {
             quantity
         }
 
-        console.log(jewellers);
+        console.log(jeweller);
 
-        fetch(`http://localhost:5000/api/jewellers`, {
+        fetch(`http://localhost:5000/api/jeweller`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(jewellers)
+            body: JSON.stringify(jeweller)
         })
             .then(res => res.json())
             .then(data => {
