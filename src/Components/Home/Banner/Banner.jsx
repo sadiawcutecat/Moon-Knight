@@ -3,36 +3,47 @@
 const Banner = () => {
     return (
         <div>
+
             <div className="carousel w-full">
-  <div id="slide1" className="carousel-item relative w-full">
-    <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" className="btn btn-circle">❮</a> 
-      <a href="#slide2" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide2" className="carousel-item relative w-full">
-    <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" className="btn btn-circle">❮</a> 
-      <a href="#slide3" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide3" className="carousel-item relative w-full">
-    <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" className="btn btn-circle">❮</a> 
-      <a href="#slide4" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide4" className="carousel-item relative w-full">
-    <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" className="btn btn-circle">❮</a> 
-      <a href="#slide1" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
+                <div id="slide1" className="carousel-item relative w-full ">
+
+                    <div className='mt-60 px-20 w-[50vw] h-[600px] '>
+                        <h1 className='text-4xl font-serif font-bold'>Flower Diamond Collection</h1>
+                        <p className=' text-2xl my-4 font-serif'>Budget Jewellery Starting $140.99 </p>
+                        <button className="btn bg-amber-300 sm:btn-sm md:btn-md lg:btn-lg font-serif font-bold">Read more</button>
+                    </div>
+                    <img src="/public/images/Antikschmuck-1536x1024.jpg.webp" className="w-[50vw] h-[600px]" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" className="btn btn-circle">❮</a>
+                        <a href="#slide2" className="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" className="carousel-item relative w-full">
+                <div className='mt-60 px-20 w-[60vw] h-[600px] '>
+                        <h1 className='text-4xl font-serif font-bold'>New Diamond & Wedding Rings</h1>
+                        <p className=' text-2xl my-4 font-serif'>Avail 15% of on making charges for all Jewellery</p>
+                        <button className="btn bg-amber-300 sm:btn-sm md:btn-md lg:btn-lg font-serif font-bold">Read more</button>
+                    </div>
+                    <img src="/public/images/images.jpeg" className="w-[40vw] h-[600px]" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" className="btn btn-circle">❮</a>
+                        <a href="#slide3" className="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" className="carousel-item relative w-full">
+                <div className='mt-60 px-20 w-[60vw] h-[600px] '>
+                        <h1 className='text-4xl font-serif font-bold'>Grace Designer Jewellery</h1>
+                        <p className=' text-2xl my-4 font-serif'>Rings, Occasion Pieces, Pandora & More </p>
+                        <button className="btn bg-amber-300 sm:btn-sm md:btn-md lg:btn-lg font-serif font-bold">Read more</button>
+                    </div>
+                    <img src="/public/images/images (1).jpeg" className="w-[40vw] h-[600px]" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" className="btn btn-circle">❮</a>
+                        <a href="#slide1" className="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     );
 };
