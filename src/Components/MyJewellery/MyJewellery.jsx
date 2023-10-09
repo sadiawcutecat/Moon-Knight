@@ -22,7 +22,7 @@ const MyJewellery = () => {
             };
     
             fetchData();
-        }, []);
+        }, [user?.email]);
         
         const handleDelete = id => {
             const proceed = confirm('Are You sure you want to delete');
