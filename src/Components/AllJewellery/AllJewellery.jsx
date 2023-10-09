@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 
 const AllJewellery = () => {
-    const [allJewellerss, setAllJeweller] = useState(null);
+    const [allJewellers, setAllJeweller] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`https://b7-a11-toy-marketplace-server.vercel.app/api/allJewellers`);
+            const response = await fetch(`http://localhost:5000/api/allJewellers`);
             if (response.ok) {
                 const data = await response.json();
                 setAllJeweller(data);
@@ -38,7 +38,7 @@ const AllJewellery = () => {
                             <p className='font-bold font-serif'>Price: $ {allJeweller.price}</p>
                             <p className='font-bold font-serif'>Available-Quantity: {allJeweller.quantity}</p>
                             <div className="card-actions">
-                                <button className="btn btn-accent className='font-bold font-serif'">View Details</button>
+                                <button className="btn bg-amber-300 className='font-bold font-serif'">View Details</button>
                             </div>
                         </div>
                     </div>
