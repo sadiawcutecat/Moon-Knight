@@ -1,8 +1,15 @@
-# React + Vite
+# Jewellery Shop
+It's a demo website for Jewellery. Here anyone can visit.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+In this Website
+- have Jewellery list.
+- user can view  , All jewelley, My jewelley.
+- user can See how to buy.
+- user can add jewelley.
 
-Currently, two official plugins are available:
+- if user is singed in then he visit the website
+- have blog page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live link here
+-
