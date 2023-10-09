@@ -15,12 +15,14 @@ import AddJeweller from './Components/AddJewellery/AddJewellery';
 import AllJewellery from './Components/AllJewellery/AllJewellery';
 import MyJewellery from './Components/MyJewellery/MyJewellery';
 import Blogs from './Components/Blogs/Blogs';
+import Error from './Components/Error/Error';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement:<Error></Error>,
     children: [
       {
         path: '/',
