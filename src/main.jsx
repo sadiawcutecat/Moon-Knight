@@ -11,6 +11,7 @@ import App from './App';
 import Login from './Components/Home/Login/Login';
 import SignUp from './Components/Home/SignUp/SignUp';
 import AuthProvider from './Provider/AuthProvider';
+import AddJeweller from './Components/AddJewellery/AddJewellery';
 
 
 const router = createBrowserRouter([
@@ -27,8 +28,12 @@ const router = createBrowserRouter([
         element: <Login></Login>
       },
       {
-        path: '/signup',
+        path: '/SignUp',
         element: <SignUp></SignUp>
+      },
+      {
+        path: '/AddJeweller',
+        element: <AddJeweller></AddJeweller>
       },
      
 

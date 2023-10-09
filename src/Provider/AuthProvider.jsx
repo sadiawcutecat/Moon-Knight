@@ -1,8 +1,9 @@
 import  { createContext, useEffect, useState } from 'react';
 import { createUserWithEmailAndPassword, GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 
-// import { useNavigate } from 'react-router-dom';
+
 import app from '../Firebase/firebase.config';
+import { useNavigate } from 'react-router-dom';
 
 export const AuthContext = createContext()
 
@@ -37,7 +38,8 @@ const AuthProvider = (  {children}) => {
         signOut(auth)
             .then(result => {
                 console.log(result);
-                //   navigate(from, {replace:true});
+                 // eslint-disable-next-line react-hooks/rules-of-hooks, no-undef
+                 useNavigate(from, {replace:true});
                 setUser(null);
                
             })
@@ -55,7 +57,7 @@ const AuthProvider = (  {children}) => {
             return unsubscribe();
         }
 
-    }, [])
+    }, [auth])
 
 
     const authInfo = {
